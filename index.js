@@ -14,8 +14,8 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT;
-const Server = app.listen(PORT, async () => {
-  await connectDB();
+const Server = app.listen(PORT, () => {
+  connectDB();
   console.log(`The Express Server is Running on Port : ${PORT}`);
 });
 
