@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha ./tests",
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "test": "mocha ./tests/diplome.test.js"
   },
   "author": "",
   "license": "ISC",
