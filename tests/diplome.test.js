@@ -22,9 +22,7 @@ describe("Unit Testing for All Diplome APIs :", () => {
           res.should.have.status(200);
           res.body.should.have.property("message").eql("Operation Succeded");
           res.should.be.a("object");
-          expect(res.body)
-            .to.have.deep.property("AllDiplomes")
-            .that.has.lengthOf(0);
+          expect(res.body).to.have.property("AllDiplomes").that.has.lengthOf(0);
           done();
         });
     });
