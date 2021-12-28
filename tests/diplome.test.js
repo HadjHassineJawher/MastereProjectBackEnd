@@ -14,7 +14,7 @@ describe("Unit Testing for All Diplome APIs :", () => {
    * Get all diplomes
    */
   describe("Get all diplomes from the database.", () => {
-    it("It Should prove that the database is Empty.", (done) => {
+    it("It Should prove that the diplomes collection  is Empty.", (done) => {
       chai
         .request(Server)
         .get("/Api/Diplomes")
@@ -29,7 +29,7 @@ describe("Unit Testing for All Diplome APIs :", () => {
   });
 
   /**
-   * Testing Post Diplome & Verifing the Data.
+   * Testing Post Diplome & Verifing the Data' existance .
    */
 
   describe("Adding & Verifying a New Diplome to the Database.", () => {
@@ -75,9 +75,7 @@ describe("Unit Testing for All Diplome APIs :", () => {
           res.should.have.status(200);
           res.body.should.have.property("message").eql("Operation Succeded");
           res.should.be.a("object");
-          expect(res.body)
-            .to.have.deep.property("AllDiplomes")
-            .that.has.lengthOf(1);
+          expect(res.body).to.have.property("AllDiplomes").that.has.lengthOf(1);
           done();
         });
     });
