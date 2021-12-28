@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "test": "mocha ./tests --timeout 10000"
+    "test": "mocha ./tests/diplome.test.js --timeout 10000"
   },
   "author": "",
   "license": "ISC",
