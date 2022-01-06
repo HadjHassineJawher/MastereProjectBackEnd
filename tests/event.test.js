@@ -27,6 +27,7 @@ describe("Unit Testing for All Event APIs :", () => {
           expect(res.body).to.have.property("AllEvents").that.has.lengthOf(0);
           done();
         });
+      done();
     });
   });
 });
