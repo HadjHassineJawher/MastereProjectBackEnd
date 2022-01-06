@@ -1,5 +1,6 @@
 const { Diplome } = require("../models/diplome");
 const { Experience } = require("../models/experience");
+const { Event } = require("../models/event");
 /**
  * Clean up the database before test
  */
@@ -7,6 +8,7 @@ const { Experience } = require("../models/experience");
 before((done) => {
   Diplome.deleteMany({}, function (err) {});
   Experience.deleteMany({}, function (err) {});
+  Event.deleteMany({}, function (err) {});
   done();
 });
 
@@ -17,5 +19,6 @@ before((done) => {
 after((done) => {
   Diplome.deleteMany({}, function (err) {});
   Experience.deleteMany({}, function (err) {});
+  Event.deleteMany({}, function (err) {});
   done();
 });
