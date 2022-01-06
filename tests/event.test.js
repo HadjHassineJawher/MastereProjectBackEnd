@@ -25,7 +25,6 @@ describe("Unit Testing for All Event APIs :", () => {
           res.body.should.have.property("message").eql("Operation Succeded");
           res.should.be.a("object");
           expect(res.body).to.have.property("AllEvents").that.has.lengthOf(0);
-          done();
         });
       done();
     });
