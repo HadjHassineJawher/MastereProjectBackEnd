@@ -3,9 +3,14 @@ const Schema = mongoose.Schema;
 
 const EventSchema = new Schema(
   {
+    name: {
+      type: String,
+      required: true
+    },
     date_deb: { type: Date, require: true },
     date_fin: { type: Date, require: true },
     description: { type: String, require: true },
+    room:{ type: String },
     sessions: [
       {
         type: Schema.Types.ObjectId,
