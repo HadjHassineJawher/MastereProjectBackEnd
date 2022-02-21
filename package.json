@@ -8,6 +8,10 @@
     "startStream": "nodemon streamServer.js",
     "test": "mocha ./tests/diplome.test.js"
   },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
