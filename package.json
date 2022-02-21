@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon index.js streamServer.js ",
+    "startStream": "nodemon streamServer.js",
     "test": "mocha ./tests/diplome.test.js"
   },
   "author": "",
@@ -14,10 +15,13 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "heroku": "^7.59.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.0.14",
     "multer": "^1.4.3",
-    "nodemailer": "^6.7.2"
+    "nodemailer": "^6.7.2",
+    "peer": "^0.6.1",
+    "socket.io": "^4.4.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",

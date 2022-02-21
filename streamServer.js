@@ -1,16 +1,19 @@
 const express = require('express')
-const { ExpressPeerServer } = require('peer')
+
 const app= express()
 const server = require('http').Server(app)
 
 const cors = require("cors");
+app.use(cors());
+
+
 const io = require('socket.io')(server,{
     cors:{
-        origin: "http://localhost:8080",
+        origin: "*",
         methods: ["GET","POST"],
     }
 })
-
+const { ExpressPeerServer } = require('peer')
 const peerServer = ExpressPeerServer(server,{
     debug: true
 })
