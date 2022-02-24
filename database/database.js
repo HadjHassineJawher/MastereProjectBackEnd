@@ -1,9 +1,9 @@
 const mongoose = require("mongoose");
 require("dotenv").config({ path: "./config/.env" });
 
-const MONGO_USER = process.env.MONGO_USER;
-const MONGO_PASSWORD = process.env.MONGO_PASSWORD;
-const MONGO_DB = process.env.MONGO_DB;
+const MONGO_USER = process.env.MONGO_USER || "EventsProjectGroup";
+const MONGO_PASSWORD = process.env.MONGO_PASSWORD || "MPDAM";
+const MONGO_DB = process.env.MONGO_DB || "MpdamEvents";
 
 const connectDB = async () => {
   try {
