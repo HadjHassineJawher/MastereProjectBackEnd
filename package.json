@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js ",
-    "test": "mocha ./tests/diplome.test.js"
+    "test": "mocha ./tests/diplome.test.js",
+    
+
   },
   "author": "",
   "license": "ISC",
