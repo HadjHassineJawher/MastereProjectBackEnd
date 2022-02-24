@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
   res.send("<center> MPDAM Project Server is Running Fine .. 👏 </center>");
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 const Server = app.listen(PORT, () => {
   connectDB();
   console.log(`The Express Server is Running on Port : ${PORT}`);
